@@ -1,0 +1,14 @@
+Considerable systematic and random biases are introduced between the MS
+runs, which makes normalization of proteomics data important [55, 56]. A
+common approach is to correct the ion intensities in the spectra, either based
+on specific peaks from housekeeping genes (“housekeeping peaks”) or based on
+the data of all or the majority of the quantified peptides detected in the sample.
+Evaluations have shown that methods that use regression-based correction of
+peak abundance [40, 55], normalization of the empirical quantiles between the
+replicates [44], and scaling based on the total ion intensity in relation to the
+total protein length all have good and robust performance for several types
+of proteomics datasets [56]. Many of the normalization techniques originally
+developed for correcting gene expression microarrays have also been shown to
+be suitable for proteomics data.
+
+*** Try out QPROT: Statistical Method for Testing Differential Expression Using Protein-Level Intensity Data in Label-Free Quantitative Proteomics ** includes probabilistic treatment of missing values in protein intensity data
