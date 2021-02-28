@@ -5,7 +5,7 @@
 ##########################################################################################
 
 suppressPackageStartupMessages(library(MetaDE))
-source("MetaDE.ES_custom.R")
+source("scripts/metaDE.ES_custom.R")
 
 # Creates a dataframe cointaing estimators for using in metaDE
 # Estimators are Effect Size (ES), Variance (Var) and P value.
