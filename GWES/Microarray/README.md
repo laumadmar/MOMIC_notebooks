@@ -6,7 +6,7 @@ DNA microarrays can simultaneously measure the expression level of thousands of 
 
 Notebooks are provided as read-only templates and are self-explanatory. To create your own notebook from a template, select the desired notebook/template and click on the Duplicate button. Modify paths and code according to your needs. Alternatively, create an empty notebook from the New button located at the top left menu and follow the same steps indicated in the template.
 
-Note the cell that imports the core pipeline functions, `source("/mnt/data/GeneExpression/scripts/diffExpressionPipeline.R")`. It is very important that you run this cell first.
+Note the cell that imports the core pipeline functions, `source("scripts/diffExpressionPipeline.R")`. It is very important that you run this cell first.
 
 Execute code in cells with `CTRL+ENTER` or doing click on the Run button located at the top menu. Alternative `CTRL+ALT` to create a new empty code cell bellow it. Click on Help button-> Keyboard Shortcuts to know some useful shortcuts. 
 
