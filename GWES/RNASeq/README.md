@@ -10,6 +10,11 @@ Execute code in cells with `CTRL+ENTER` or doing click on the Run button located
 
 A typical workflow to perform RNASeq analysis is as follow:
 1. QC. Check the overall quality of the sequenced reads with fastqc tool usign the template Task1_QC_raw_data
-2. Alignment. Align the reads to the reference genome with STAR using the template Task2.1_Alignment_and_ReadQuantification. Run Task2.2_ReadQuantification_to_DESeqDataSet to transform the results of STAR quantification into a format that can be used in the DE step.
-3. Differential Expression. Perform DE analysis with DESeq2 using the template Task3_DifferentialAnalysis_compact or the step_by_step one for a detailed protocol without functions wrapping the code.
+2. Alignment. Align the reads to the reference genome with STAR using the template Task2.1_Alignment_and_ReadQuantification. 
+This includes:
+    * Download the reference genome and annotation file from ensembl.org.
+    * Generate genome index with `STAR --runMode genomeGenerateRun` 
+    * Perform the alignment and read quantification with `STAR --quantMode GeneCounts` 
+3. Run Task2.2_ReadQuantification_to_DESeqDataSet to transform the results of STAR quantification into a format that can be used in the DE step.
+4. Differential Expression. Perform DE analysis with DESeq2 using the template Task3_DifferentialAnalysis_compact or the step_by_step one for a detailed protocol without functions wrapping the code.
 
