@@ -20,7 +20,7 @@ prepare_matrix_function <- function(path,filename,type=NA){
     if(is.na(type)){
         dataset$ES<-as.numeric(dataset$logFC)
         stderr<-(as.numeric(dataset$CI.R)-as.numeric(dataset$CI.L))/3.92
-        dataset$Var <- stderr^2
+        dataset$Var <- (stderr^2)*nrow(dataset)
         matrix<-dataset[ , c("ES","Var","P.Value")]
         matrix$gene=rownames(dataset)
     } else { # when only P values are available
